@@ -1,0 +1,311 @@
+
+.btn {
+    color: #fff;
+    border-radius: 8px;
+    background: #FF900E;
+    border: 0;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    cursor: pointer;
+
+}
+
+/*******header-style*****/
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.banner-text {
+    color: #727272;
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/* main style */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.img-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.text-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.text-content h2 {
+    font-size: 3rem;
+
+}
+
+.text-content .quick {
+    color: #727272;
+    font-weight: 500;
+}
+
+.text-content .feat {
+    color:#FF900E ;
+    font-weight: 700;
+}
+
+.section-2 {
+    display: flex;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.section-2 h2 {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+
+}
+
+.section-2 p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #727272;
+
+}
+
+.section-2 h3 {
+    font-size: 1.50rem;
+    font-weight: 600;
+    color: #727272;
+
+}
+
+.section-2 .card {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06); 
+}
+
+.section-2 img {
+    height: 95%;
+    margin-left: 50px;
+}
+
+.ten-year {
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    padding: 40px;
+    position: relative;
+    bottom: 140px;
+
+
+}
+
+.ten-year h2 {
+    font-size: 4rem;
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+}
+
+.ten-year p {
+    font-size: 1.5rem;
+    color: #FFF;
+    text-align: center;
+}
+
+.section-3 {
+    margin-top: 100px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-container .card {
+    border-radius: 8px;
+    border: 2px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.section-3 h2 {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.section-3 p {
+  color: #727272;  
+}
+
+.card-container .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.card-container .card-header {
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.section-4 {
+    text-align: center;
+}
+
+.section-4 h2 {
+    font-size: 2.8rem;
+    color: #424242;
+    font-weight: 700;
+}
+
+.section-4 p {
+    font-size: 1rem;
+    color: #727272;
+    font-weight: 500;
+}
+
+
+.brand {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.section-4 img {
+    width: 165px;
+}
+
+footer {
+    max-width: 1440px;
+    padding: 35px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 100px auto;
+    text-align: center;
+}
+
+footer p {
+    color: #424242;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/**** response  media **/
+@media screen and (max-width: 576px) {
+    header, .text-content {
+        padding: 20px;
+    }
+
+    .card-container, .brand {
+        padding: 0px 20px ;
+        gap: 20px;
+    }
+
+    nav, .container, .section-2, .card-container, .brand {
+        flex-direction: column;
+    }
+
+    .img-content {
+        grid-template-columns: 1fr;
+    }
+
+    .section-2 img {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .ten-year {
+        width: 280px;
+        position: relative;
+        bottom: 0px;
+    }
+
+       
+}
+
+@media screen and  (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 40px;
+    }
+
+    nav, .container, .brand, .section-2  {
+        flex-direction: column;
+    }
+
+    
+
+
+    
+}
+
+
